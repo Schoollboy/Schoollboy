@@ -46,23 +46,3 @@
 
 ## 📌 Fun Fact  
 I once spent hours debugging a WebSocket issue it turned out to be **one typo.** Now I double-check everything… but I still enjoy solving complex problems! 😆  
-
----
-
-## 🔄 Auto-Updating Profile  
-This profile updates **automatically** with my latest GitHub activity! 🚀  
-
-```yaml
-name: Update Profile README
-on:
-  schedule:
-    - cron: '0 0 * * *'  # Runs daily
-  workflow_dispatch:
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update README with Latest Repos
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://github.com/sagiv60.atom"
