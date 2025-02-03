@@ -9,13 +9,20 @@
 ## 🔧 Tech Stack  
 
 ### **Languages & Frameworks**  
-![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,sqlite,html,css,js,ts)  
+![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,sqlite,html,css,js,ts,git,github,tailwind)  
+
+- **Backend:** Node.js, Express.js  
+- **Frontend:** HTML, CSS, JavaScript, TailwindCSS  
+- **Databases:** MongoDB, SQLite  
+- **APIs & Bots:** Discord.js, WebSockets  
+- **Version Control:** Git, GitHub  
 
 ---
 
 ## 🏗️ Current Projects  
 🔹 **[WSBooking](https://github.com/WolfietteStudios)** – A **Roblox-Discord-Website** booking system with automated flight management.  
 🔹 **[Custom Discord Bots](https://discord.gg/RfD8sDxF99)** – Creating **highly customizable bots** for various use cases.  
+🔹 **[Automated Email Receipt System]** – A Discord bot that allows users to **edit and send HTML receipt templates via email.**  
 
 ---
 
@@ -23,6 +30,7 @@
 🚀 **Scaling web apps** to handle high traffic efficiently.  
 🤖 **AI-powered Discord bots** for automation and smarter interactions.  
 📡 **WebSockets for real-time communication** between platforms.  
+🔒 **Security best practices** for APIs and bot hosting.  
 
 ---
 
