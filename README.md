@@ -40,7 +40,7 @@
 
 [![Website](https://img.shields.io/badge/Website-smbotcreation.com-blue?style=for-the-badge)](https://smbotcreation.com)  
 [![GitHub](https://img.shields.io/badge/GitHub-sagiv60-black?style=for-the-badge&logo=github)](https://github.com/sagiv60)  
-[![Discord](https://img.shields.io/badge/Discord-WSBooking-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/RfD8sDxF99)  
+[![Discord](https://img.shields.io/badge/Discord-SM_Bot_Creation-5865F2?style=for-the-badge&logo=discord)](https://discord.gg/RfD8sDxF99)  
 
 ---
 
