@@ -22,7 +22,6 @@
 ## 🏗️ Current Projects  
 🔹 **[WSBooking](https://github.com/WolfietteStudios)** – A **Roblox-Discord-Website** booking system with automated flight management.  
 🔹 **[Custom Discord Bots](https://discord.gg/RfD8sDxF99)** – Creating **highly customizable bots** for various use cases.  
-🔹 **[Automated Email Receipt System]** – A Discord bot that allows users to **edit and send HTML receipt templates via email.**  
 
 ---
 
