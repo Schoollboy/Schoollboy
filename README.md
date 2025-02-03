@@ -7,12 +7,9 @@
 ---
 
 ## 🔧 Tech Stack  
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)  
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)  
-![Discord.js](https://img.shields.io/badge/Discord.js-5865F2?style=for-the-badge&logo=discord&logoColor=white)  
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)  
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)  
+
+### **Languages & Frameworks**  
+![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,mariadb,sqlite,html,css,js,ts)  
 
 ---
 
@@ -45,4 +42,4 @@
 ---
 
 ## 📌 Fun Fact  
-I once spent hours debugging a WebSocket issue it turned out to be **one typo.** Now I double-check everything… but I still enjoy solving complex problems! 😆  
+I once spent hours debugging a WebSocket issue—turned out to be **one typo.** Now I double-check everything… but I still enjoy solving complex problems! 😆  
