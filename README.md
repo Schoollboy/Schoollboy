@@ -9,7 +9,7 @@
 ## 🔧 Tech Stack  
 
 ### **Languages & Frameworks**  
-![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,mariadb,sqlite,html,css,js,ts)  
+![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,sqlite,html,css,js,ts)  
 
 ---
 
