@@ -9,7 +9,7 @@
 ## 🔧 Tech Stack  
 
 ### **Languages & Frameworks**  
-![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,sqlite,html,css,js,ts,git,github,tailwind)  
+![My Skills](https://skillicons.dev/icons?i=nodejs,express,discord,mongodb,sqlite,html,css,js,ts,git,github)  
 
 - **Backend:** Node.js, Express.js  
 - **Frontend:** HTML, CSS, JavaScript, TailwindCSS  
