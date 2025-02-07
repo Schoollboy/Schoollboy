@@ -1,6 +1,6 @@
 # Hi, I'm Sagiv 👋
 
-💻 **Full-Stack Developer** specializing in **Node.js, Express.js, and Discord.js**  
+💻 **Backend Developer** specializing in **Node.js, Express.js, and Discord.js**  
 🚀 **Lead Developer** of **[WSBooking](https://github.com/WolfietteStudios)** – A full-stack **Roblox-Discord-Website-Bot Ticket Booking System**  
 📫 Reach me at: [sagiv@smbotcreation.com](mailto:sagiv@smbotcreation.com)  
 
