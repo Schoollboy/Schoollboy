@@ -1,89 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - School Boy</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Sagiv (School Boy)</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .about-me {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .profile {
-            margin-bottom: 20px;
-        }
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-        h1, h2 {
-            color: #222;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        text-align: center;
+        color: white;
+      }
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .experience {
+        flex: 1;
+        min-width: 400px;
+        padding: 20px;
+        background: #1e1e1e;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        text-align: left;
+      }
+      .experience:hover {
+        transform: scale(1.05);
+      }
+      .experience h2 {
+        color: #ffcc00;
+        margin-bottom: 10px;
+      }
+      .experience p {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .experience ul {
+        list-style: none;
+        padding: 0;
+      }
+      .experience ul li {
+        font-size: 16px;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+      }
+      .experience ul li::before {
+        content: "✔";
+        color: #ffcc00;
+        margin-right: 10px;
+      }
+      .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .contact {
+        margin-top: 30px;
+        font-size: 18px;
+      }
+      .contact a {
+        color: #ffcc00;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <div class="about-me">
-        <div class="profile">
-            <img src="ppf.png" alt="schoolboy's Avatar" class="avatar">
-            <h1>Sagiv</h1>
-            <p>💻 <strong>Full-Stack Developer</strong> specializing in <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>Discord.js</strong></p>
-            <p>🚀 <strong>Lead Developer</strong> of <a href="https://github.com/WolfietteStudios" target="_blank" rel="noopener noreferrer">WSBooking</a> – A full-stack <strong>Roblox-Discord-Website-Bot Ticket Booking System</strong></p>
-            <p>📫 Reach me at: <a href="mailto:sagiv@smbotcreation.com">sagiv@smbotcreation.com</a></p>
-            <p>With over 2 years of experience, I focus on building scalable, high-performance web apps and highly customizable bots. I enjoy tackling complex challenges and creating seamless integrations across platforms.</p>
+    <script>
+      function redirect(url) {
+        window.open(url, "_blank");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sagiv (School Boy)</h1>
+      <p>
+        Hello, my name is Sagiv. I've been working with JavaScript and Node.js
+        for over 2 years, focusing on building scalable, high-performance web
+        apps and highly customizable bots. I enjoy tackling complex challenges
+        and creating seamless integrations across platforms.
+      </p>
+
+      <div class="experience-container">
+        <div
+          class="experience"
+          onclick="redirect('https://discord.gg/nP7bcjHpV4')"
+        >
+          <h2>Head Developer - WSBooking <span class="badge">Current</span></h2>
+          <p>WSBooking</p>
+          <ul>
+            <li>Led the development of the booking platform architecture</li>
+            <li>Managed a team of developers to meet project deadlines</li>
+          </ul>
+          <span class="badge">Leadership</span>
+          <span class="badge">Architecture</span>
+          <span class="badge">Team Management</span>
         </div>
 
-        <div class="roles">
-            <h2>Current Roles</h2>
-            <ul>
-                <li><strong>Lead Developer</strong> - WSBooking Bot & Roblox-Discord Integration <a href="https://discord.gg/RfD8sDxF99" target="_blank" rel="noopener noreferrer">@WolfietteStudios</a> (1220+ Members)</li>
-                <li><strong>Bot Developer</strong> - Fluxara Advertisements Bot <a href="https://discord.gg/RfD8sDxF99" target="_blank" rel="noopener noreferrer">@Fluxara</a> (590+ Members)</li>
-                <li><strong>Bot Developer</strong> - Air Flash Support Bot <a href="https://discord.gg/RfD8sDxF99" target="_blank" rel="noopener noreferrer">@Air Flash</a> (1200+ Members)</li>
-            </ul>
+        <div
+          class="experience"
+          onclick="redirect('https://discord.gg/onpoint-562017478289653763')"
+        >
+          <h2>
+            Backend Developer - OnPoint <span class="badge">Current</span>
+          </h2>
+          <p>OnPoint</p>
+          <ul>
+            <li>Developed many APIs.</li>
+            <li>
+              Collaborating with the team to understand backend requirements.
+            </li>
+            <li>
+              Learning and implementing best practices for security and
+              performance.
+            </li>
+          </ul>
+
+          <span class="badge">API Development</span>
         </div>
 
-        <div class="projects">
-            <h2>Work & Projects</h2>
-            <p>Recent projects I've been working on include:</p>
-            <ul>
-                <li><strong><a href="https://github.com/WolfietteStudios" target="_blank" rel="noopener noreferrer">WSBooking</a></strong> – A full-stack <strong>Roblox-Discord-Website</strong> booking system with automated flight management.</li>
-                <li><strong>Custom API Development</strong> for <a href="https://github.com/WolfietteStudios" target="_blank" rel="noopener noreferrer">WSBooking Bot</a> to improve ticket management and booking automation.</li>
-            </ul>
+        <div class="experience">
+          <h2>Discord Bot Developer <span class="badge">Current</span></h2>
+          <p>Freelance</p>
+          <ul>
+            <li>
+              Created Discord bots using JavaScript to enhance server
+              functionality
+            </li>
+          </ul>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Node.js</span>
+          <span class="badge">Automation</span>
         </div>
 
-        <div class="connect">
-            <h2>Connect with Me</h2>
-            <ul>
-                <li><a href="https://github.com/sagiv60" target="_blank" rel="noopener noreferrer">GitHub: sagiv60</a></li>
-                <li><a href="https://discord.gg/RfD8sDxF99" target="_blank" rel="noopener noreferrer">Discord: SM Bot Creation</a></li>
-            </ul>
+        <div
+          class="experience"
+          onclick="redirect('https://discord.gg/66sDsCUAjc')"
+        >
+          <h2>Founder - SM Bot Creation <span class="badge">Current</span></h2>
+          <p>SM Bot Creation</p>
+          <ul>
+            <li>Co-founded a Discord bot development community</li>
+          </ul>
+          <span class="badge">Community Building</span>
+          <span class="badge">Bot Development</span>
         </div>
+      </div>
+
+      <div class="contact">
+        <p>
+          Contact me at:
+          <a href="mailto:sagiv@smbotcreation.com">sagiv@smbotcreation.com</a>
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
