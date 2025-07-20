@@ -2,97 +2,202 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio - Sagiv (School Boy)</title>
     <style>
+      /* Reset & base */
+      * {
+        box-sizing: border-box;
+      }
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #121212;
-        text-align: center;
-        color: white;
+        background-color: #ffffff;
+        color: #1a2a6c; /* Dark blue text */
+        line-height: 1.6;
+      }
+      a {
+        color: #007bff; /* Bright blue */
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      a:hover,
+      a:focus {
+        color: #0056b3;
+        text-decoration: underline;
       }
       .container {
         max-width: 900px;
-        margin: 50px auto;
-        padding: 20px;
+        margin: 60px auto 80px;
+        padding: 0 20px;
       }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 0.3em;
+        color: #0056b3; /* Strong blue */
+        letter-spacing: 1.5px;
+      }
+      p.intro {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto 50px;
+        color: #334080;
+        line-height: 1.8;
+      }
+
+      /* Experience cards container */
       .experience-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
       }
+
+      /* Card styles */
       .experience {
-        flex: 1;
-        min-width: 400px;
-        padding: 20px;
-        background: #1e1e1e;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease;
+        background: #f0f7ff; /* very light blue */
+        border: 1.5px solid #007bff;
+        border-radius: 14px;
+        padding: 28px 32px;
         cursor: pointer;
-        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        user-select: none;
       }
-      .experience:hover {
+      .experience:hover,
+      .experience:focus {
+        outline: none;
         transform: scale(1.05);
+        border-color: #0056b3;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        background: #e2efff;
       }
+      .experience:active {
+        transform: scale(0.98);
+      }
+
+      /* Titles */
       .experience h2 {
-        color: #ffcc00;
-        margin-bottom: 10px;
-      }
-      .experience p {
-        font-size: 18px;
-        margin: 10px 0;
-      }
-      .experience ul {
-        list-style: none;
-        padding: 0;
-      }
-      .experience ul li {
-        font-size: 16px;
-        padding: 5px 0;
+        color: #003366; /* Dark navy blue */
+        font-weight: 700;
+        margin-bottom: 16px;
+        font-size: 1.55rem;
+        line-height: 1.2;
         display: flex;
         align-items: center;
-      }
-      .experience ul li::before {
-        content: "✔";
-        color: #ffcc00;
-        margin-right: 10px;
+        gap: 10px;
       }
       .badge {
-        display: inline-block;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 5px 10px;
-        border-radius: 15px;
-        font-size: 14px;
-        margin-top: 10px;
+        background: #007bff;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.82rem;
+        padding: 4px 12px;
+        border-radius: 20px;
+        user-select: none;
+        box-shadow: 0 0 6px #007bffaa;
+        flex-shrink: 0;
+        transition: background-color 0.3s ease;
       }
+      .badge:hover {
+        background-color: #0056b3;
+        box-shadow: 0 0 10px #0056b3cc;
+      }
+
+      /* Company name */
+      .company {
+        font-style: italic;
+        color: #4061a5;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      /* Description list */
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+      }
+      ul li {
+        position: relative;
+        padding-left: 28px;
+        font-size: 1rem;
+        margin-bottom: 14px;
+        color: #2e3b66;
+        line-height: 1.5;
+        transition: color 0.3s ease;
+      }
+      ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #007bff;
+        font-weight: bold;
+        font-size: 1.15rem;
+      }
+      ul li:hover {
+        color: #0056b3;
+      }
+
+      /* Contact section */
       .contact {
-        margin-top: 30px;
-        font-size: 18px;
+        margin-top: 70px;
+        font-size: 1.22rem;
+        color: #4061a5;
+        letter-spacing: 0.03em;
+        text-align: center;
       }
       .contact a {
-        color: #ffcc00;
-        text-decoration: none;
-        font-weight: bold;
+        font-size: 1.35rem;
+        font-weight: 700;
       }
-      .contact a:hover {
-        text-decoration: underline;
+
+      /* Accessibility - allow keyboard focus for cards */
+      .experience:focus {
+        outline: 3px solid #007bff;
+        outline-offset: 4px;
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2.4rem;
+        }
+        .experience {
+          padding: 22px 25px;
+        }
+        ul li {
+          font-size: 0.97rem;
+        }
       }
     </style>
     <script>
       function redirect(url) {
-        window.open(url, "_blank");
+        window.open(url, "_blank", "noopener");
       }
+      // Make cards accessible by keyboard
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".experience[onclick]");
+        cards.forEach((card) => {
+          card.setAttribute("tabindex", "0");
+          card.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              card.click();
+            }
+          });
+        });
+      });
     </script>
   </head>
   <body>
     <div class="container">
       <h1>Sagiv (School Boy)</h1>
-      <p>
+      <p class="intro">
         Hello, my name is Sagiv. I've been working with JavaScript and Node.js
         for over 2 years, focusing on building scalable, high-performance web
         apps and highly customizable bots. I enjoy tackling complex challenges
@@ -102,73 +207,65 @@
       <div class="experience-container">
         <div
           class="experience"
-          onclick="redirect('https://discord.gg/nP7bcjHpV4')"
-        >
-          <h2>Head Developer - WSBooking <span class="badge">Current</span></h2>
-          <p>WSBooking</p>
-          <ul>
-            <li>Led the development of the booking platform architecture</li>
-            <li>Managed a team of developers to meet project deadlines</li>
-          </ul>
-          <span class="badge">Leadership</span>
-          <span class="badge">Architecture</span>
-          <span class="badge">Team Management</span>
-        </div>
-
-        <div
-          class="experience"
           onclick="redirect('https://discord.gg/onpoint-562017478289653763')"
+          role="button"
+          aria-label="Backend Developer at OnPoint, click to join Discord"
         >
           <h2>
             Backend Developer - OnPoint <span class="badge">Current</span>
           </h2>
-          <p>OnPoint</p>
+          <div class="company">OnPoint</div>
           <ul>
             <li>Developed many APIs.</li>
-            <li>
-              Collaborating with the team to understand backend requirements.
-            </li>
-            <li>
-              Learning and implementing best practices for security and
-              performance.
-            </li>
+            <li>Collaborated with the team to understand backend requirements.</li>
+            <li>Learned and implemented best practices for security and performance.</li>
           </ul>
-
-          <span class="badge">API Development</span>
+          <div>
+            <span class="badge">API Development</span>
+          </div>
         </div>
 
-        <div class="experience">
-          <h2>Discord Bot Developer <span class="badge">Current</span></h2>
-          <p>Freelance</p>
+        <div class="experience" role="article" aria-label="Freelance Discord Bot Developer">
+          <h2>
+            Discord Bot Developer <span class="badge">Current</span>
+          </h2>
+          <div class="company">Freelance</div>
           <ul>
-            <li>
-              Created Discord bots using JavaScript to enhance server
-              functionality
-            </li>
+            <li>Created Discord bots using JavaScript to enhance server functionality</li>
           </ul>
-          <span class="badge">JavaScript</span>
-          <span class="badge">Node.js</span>
-          <span class="badge">Automation</span>
+          <div>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Automation</span>
+          </div>
         </div>
 
         <div
           class="experience"
           onclick="redirect('https://discord.gg/66sDsCUAjc')"
+          role="button"
+          aria-label="Founder of SM Bot Creation, click to join Discord"
         >
-          <h2>Founder - SM Bot Creation <span class="badge">Current</span></h2>
-          <p>SM Bot Creation</p>
+          <h2>
+            Founder - SM Bot Creation <span class="badge">Current</span>
+          </h2>
+          <div class="company">SM Bot Creation</div>
           <ul>
             <li>Co-founded a Discord bot development community</li>
           </ul>
-          <span class="badge">Community Building</span>
-          <span class="badge">Bot Development</span>
+          <div>
+            <span class="badge">Community Building</span>
+            <span class="badge">Bot Development</span>
+          </div>
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" aria-label="Contact information">
         <p>
           Contact me at:
-          <a href="mailto:sagiv@smbotcreation.com">sagiv@smbotcreation.com</a>
+          <a href="mailto:sagiv@smbotcreation.com" target="_blank" rel="noopener"
+            >sagiv@smbotcreation.com</a
+          >
         </p>
       </div>
     </div>
